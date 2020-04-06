@@ -26,6 +26,7 @@
    */
   function loadImage(file, callback, options) {
     var img = document.createElement('img')
+    img.style.imageOrientation = undefined
     var url
     img.onerror = function (event) {
       return loadImage.onerror(img, event, file, callback, options)
